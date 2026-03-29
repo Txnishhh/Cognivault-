@@ -175,7 +175,7 @@ public class Main {
         System.out.println("Registered successfully! You can now login.");
     }
 
-    // ─── SMART REMINDERS ─────────────────────────────────────────────────────
+   
 
     static void showReminders() {
         long pending = tasks.stream().filter(t -> !t.completed).count();
@@ -191,8 +191,7 @@ public class Main {
         System.out.println("─────────────────────────────────────────────");
     }
 
-    // ─── MAIN DASHBOARD ──────────────────────────────────────────────────────
-
+ 
     static void dashboard() {
         while (true) {
             System.out.println("\n                                   ");
@@ -473,9 +472,9 @@ public class Main {
 
 
     static void aiAdvisor() {
-        System.out.println("\n╔══════════════════════════════════════╗");
-        System.out.println("║       🤖  AI STUDY ADVISOR            ║");
-        System.out.println("╚══════════════════════════════════════╝");
+        System.out.println("\n                                        ");
+        System.out.println("        🤖  AI STUDY ADVISOR              ");
+        System.out.println("                                          ");
 
         long pending = tasks.stream().filter(t -> !t.completed).count();
         double gpa   = calculateGPA();
